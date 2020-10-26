@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Concertevents</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Member</th>
+      <th>Datetime</th>
+      <th>Description</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @concertevents.each do |concertevent| %>
+      <tr>
+        <td><%= concertevent.name %></td>
+        <td><%= concertevent.member %></td>
+        <td><%= concertevent.datetime %></td>
+        <td><%= concertevent.description %></td>
+        <td><%= link_to 'Show', concertevent %></td>
+        <td><%= link_to 'Edit', edit_concertevent_path(concertevent) %></td>
+        <td><%= link_to 'Destroy', concertevent, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Concertevent', new_concertevent_path %>

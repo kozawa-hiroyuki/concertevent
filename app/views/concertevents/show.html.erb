@@ -1,0 +1,23 @@
+
+<p>
+  <strong>Name:</strong>
+  <%= @concertevent.name %>
+</p>
+
+<p>
+  <strong>Member:</strong>
+  <%= @concertevent.member %>
+</p>
+
+<p>
+  <strong>Datetime:</strong>
+  <%= @concertevent.datetime %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @concertevent.description %>
+</p>
+
+<%= link_to 'Edit', edit_concertevent_path(@concertevent) %> |
+<%= link_to 'Back', concertevents_path %>

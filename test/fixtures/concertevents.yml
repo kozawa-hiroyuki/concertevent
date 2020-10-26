@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  member: 1
+  datetime: 2020-10-26 17:53:11
+  description: MyText
+
+two:
+  name: MyString
+  member: 1
+  datetime: 2020-10-26 17:53:11
+  description: MyText
